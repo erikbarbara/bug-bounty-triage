@@ -2,6 +2,7 @@ import os
 from flask import Flask, jsonify, request, render_template_string
 
 app = Flask(__name__)
+app.config['JSONIFY_PRETTYPRINT_REGULAR'] = True
 
 # --- Mock Database & Tokens ---
 TOKENS = {
